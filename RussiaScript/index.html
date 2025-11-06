@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Документация RussiaScript</title>
+</head>
+<body>
+  <p>Do you not know Russian? <a href="/Docs/RussiaScript/En/">English</a> <a href="/Docs/RussiaScript/Ch/">Chinese</a></p>
+  <h1>Документация RussiaScript</h1>
+  <p>Это официальная документация RussiaScript.</p>
+  <p>Она придерживается RussiaScript 1.2.</p>
+  <p>Каждый код RussiaScript содержит этот код:</p>
+  <p>{<br>"libs": [],<br>"terminal": {},<br>"code": [],<br>}</p>
+  <p>Давайте разберём каждый элемент: libs — массив используемых библиотек</p>
+  <p>terminal — для выполнения одной команды RussiaScript, вот пример содержимого этого объекта: {"command":"get os","params":""}, command — комманда терминала RussiaScript, params — параменты команды</p>
+  <p>code — массив строк кода</p>
+  <p>Одна строка это объект в виде {"command":"команда","params":{"пример":"да"}}</p>
+  <p>В этой документации в встретите такие слова как репортёры, репортёры это типы данных RussiaScript, они могут использоваться в типах и командах RussiaScript.</p>
+  <p>Также тут немного будет описана структура исходного кода RussiaScript.</p>
+  <p>RussiaScript написан на JavaScript 9-летним программистом из Марий-Эл который знает web (html + css), JavaScript а также является Скретчером, он известен как SHAMAN2016 а его реальное имя — Ильхам.</p>
+  <p>В этой документации будут все типы в RussiaScript, команды а также будет описан терминал RussiaScript.</p>
+  <p>Расширение файлов RussiaScript — .rsf (RussiaScript File)</p>
+  <h2>Команды в RussiaScript</h2>
+  <h3>Вывести</h3>
+  <p>Команда вывести выводит в внутренний output RussiaScript определённый текст, получить output RussiaScript можно с помощью специального типа.</p>
+  <p>В params указывается объект с ключем 'Текст вывода' в котором указан текст вывода в виде типа</p>
+  <h3>Очистить вывод</h3>
+  <p>Очищает внутренний RussiaScript output, output RussiaScript хранится в массиве</p>
+  <h3>http запрос</h3>
+  <p>Отправляет запрос на адрес, ответ никуда не записывается, типы не обрабатываюся</p>
+  <p>в params находится объект с ключами 'url' для указания url и 'params' для указания параментов http-запроса</p>
+  <h2>Репортёры RussiaScript/типы в RussiaScript/значения в RussiaScript</h2>
+  <h2>Терминал RussiaScript</h2>
+  <h2>Библиотеки в RussiaScript</h2>
+  <h2>filesRS</h2>
+  <h2>Фреймворки</h2>
+</body>
+</html>
