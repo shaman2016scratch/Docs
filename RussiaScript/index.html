@@ -2,6 +2,31 @@
 <html>
 <head>
 <title>Документация RussiaScript</title>
+<title id="title">RussiaScript — shaman2016 docs</title>
+<link rel="shortcut icon" href="https://shaman2016scratch.github.io/shaman2016.github.io/files/favicon%20(1).jpg" type="image/jpeg">
+<link rel="icon" href="https://shaman2016scratch.github.io/shaman2016.github.io/files/favicon%20(1).jpg" type="image/jpeg">
+<meta property="og:title" content="RussiaScript">
+<meta property="og:site_name" content="Shaman2016 Docs">
+<meta property="og:url" content="https://shaman2016scratch.github.io/Docs/RussiaScript/">
+<meta property="og:description" content="Документация по языку программирования RussiaScript">
+<meta property="og:image" content="https://shaman2016scratch.github.io/shaman2016.github.io/files/favicon%20(1).jpg">
+<meta name="description" content="Документация по языку программирования RussiaScript">
+<meta name="keywords" content="Русский язык программирования, RussiaScript, RuScript, RussianScript, RusScript, Русский JavaScript, российский язык программирования">
+<!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)};
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) {return;} }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+    ym(103647270, 'init', {webvisor: true, trackHash: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true});
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/103647270" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body>
   <p>Do you not know Russian? <a href="/Docs/RussiaScript/En/">English</a> <a href="/Docs/RussiaScript/Ch/">Chinese</a></p>
@@ -28,6 +53,26 @@
   <h3>http запрос</h3>
   <p>Отправляет запрос на адрес, ответ никуда не записывается, типы не обрабатываюся</p>
   <p>в params находится объект с ключами 'url' для указания url и 'params' для указания параментов http-запроса</p>
+  <h3>dom</h3>
+  <p>Для взаимодействия с Html-документом.</p>
+  <p>в params: метод — выбор метода из TextContent и innerHTML, элемент — id/класс html-элемента, значение — что задать</p>
+  <h3>Задать переменной значение</h3>
+  <p>Задаёт переменной значение</p>
+  <p>В params: per — переменная, value — значение</p>
+  <h3>Импортировать расширение/Импортировать библиотеку</h3>
+  <p>Для импорта расширения. УСТАРЕЛО</p>
+  <h3>js-консоль</h3>
+  <p>Для вывода в консоль браузера</p>
+  <p>В params: метод — выбрать метод лога: лог, ошибка или предупреждение, значение — содержимое лога</p>
+  <h3>Если</h3>
+  <p>Команда для выполнения конкретного кода если верно иначе другого конкретного кода</p>
+  <p>в params: bol — оператор для получения значения, то — код RussiaScript если условие верное (без объекта, только сам массив команд), иначе — код RussiaScript если значение не верное (без объекта, только сам массив команд)</p>
+  <h3>js-функция</h3>
+  <p>Для создания пользовательской функции (на JavaScript)</p>
+  <p>в params: name — имя функции, code — код функции</p>
+  <h3>rs-функция</h3>
+  <p>Для создания пользовательской функции (на RussiaScript)</p>
+  <p>в params: name — имя функции, code — код функции (только массив команд RussiaScript)</p>
   <h2>Репортёры RussiaScript/типы в RussiaScript/значения в RussiaScript</h2>
   <h2>Терминал RussiaScript</h2>
   <h2>Библиотеки в RussiaScript</h2>
