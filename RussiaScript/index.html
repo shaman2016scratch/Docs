@@ -57,6 +57,7 @@
   <p>Поделится: <a href="tg://share/text?text=Привет! я тут нашёл крутой язык программирования на JS, вот ссылка на документацию: https://shaman2016scratch.github.io/Docs/RussiaScript/">В Telegram</a></p>
   <p>Это официальная документация RussiaScript.</p>
   <p>Она придерживается RussiaScript 1.2.</p>
+  <p>RussiaScript не является экспериментальным языком программирования и не является альтернативной JavaScript/TypeScript. RussiaScript предназначен для web-разработчки на русском языке</p>
   <p>оставить информацию  о своих проектах  можно тут: https://github.com/shaman2016scratch/Docs/issues/1</p>
   <p>Каждый код RussiaScript содержит этот код:</p>
   <p>{<br>"libs": [],<br>"terminal": {},<br>"code": [],<br>}</p>
@@ -145,6 +146,20 @@
   <p>Все поля и данные в RussiaScript проходят через RussiaScriptGetValue(), то есть обрабатывается репортёрами, RussiaScriptGetValue() определяет какой тип использован, выполняет код для получения значения и выводит результат обработки ответа</p>
   <p>К примеру в RussiaScript 1.2 пропало немного типов из-за изменения структуры типов</p>
   <p>Начиная от RussiaScript 1.2 если в типе задать обычный текст, число или true/false то он сразу же выведет этот текст</p>
+  <p>Типы RussiaScript это json (все кроме простого водда текста, цифр и Boolean) в формате<br>{<br>"type": "название типа",<br>"value":"текст для типа",<br>}</p>
+  <h3>Репортер 'текст'</h3>
+  <p>репортёр для возрата любого типа, хоть array/object хоть null, хоть undefined, хоть Boolean, хоть String/Number.</p>
+  <p>value — то что вернуть</p>
+  <h3>репортер 'переменная'</h3>
+  <p>Возращает значение указанной переменной RussiaScript, в value указывайте имя переменной</p>
+  <h3>репортер 'http'</h3>
+  <p>отправляет http-запрос и возвращает результат. в value: url — url запроса, metod — метод запроса, headers — заголовки запроса</p>
+  <h3>репортер 'Пустой массив'</h3>
+  <p>Возвращает пустой массив</p>
+  <h3>репортёр 'Пустой объект'</h3>
+  <p>Возращает пустой объект</p>
+  <h3>репортер 'математика'</h3>
+  <p>Он слишком большой подробнее в shaman2016scratch.github.io/Docs/RussiaScript/#reportm_1</p>
   <h2>Терминал RussiaScript</h2>
   <h2>Библиотеки в RussiaScript</h2>
   <h2>filesRS</h2>
@@ -156,6 +171,7 @@
   <h2>publlic</h2>
   <h2>RSNJ, RSML и SLRS</h2>
   <h2>Ошибки в RussiaScript/TakeError()</h2>
+  <h2>Встроенные модули репортеры</h2>
   <h2>Ответственность</h2>
   <h2>Код RussiaScript</h2>
   <p id="ishCode">Loading</p>
